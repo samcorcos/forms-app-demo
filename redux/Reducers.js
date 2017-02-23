@@ -6,6 +6,9 @@ export const AppReducer = (state = {}, action) => {
   }
 }
 
+// NOTE this will also work, but it will require defining every form in advance
+// which is extremely tedious and clutters your code
+
 // const initialFormState = {
 //   myForm: {
 //     input1: null,
