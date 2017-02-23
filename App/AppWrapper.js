@@ -29,6 +29,20 @@ export const AppWrapper = props =>
         title={'Get Forms State'} />
   </View>
 
+// NOTE this would be the ideal solution, which would allow me to define the forms
+// at a component-level and won't clutter my application state. The problem that
+// I ran into is that I can't figure out how to get the form created before the
+// component attempts to render the value on line 20 above... I tried with an action,
+// which feels like a hack (because it is), but the component tries to render before
+// the action completes.
+
+// AppWrapper.forms = {
+//   myForm: {
+//     // NOTE this could define default values
+//     input1: 'my default value',
+//   },
+// }
+
 const mapStateToProps = state => ({
   app: state.app,
   forms: state.forms,
