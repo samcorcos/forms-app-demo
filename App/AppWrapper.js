@@ -14,8 +14,10 @@ import Store from '../redux/Store'
 const update = (params, props) => props.updateForm(params)
 
 export const AppWrapper = props =>
-  <View style={{ flex: 1, marginTop: 20, alignItems: 'center', }}>
-    <Text>Foobar</Text>
+  <View style={{ flex: 1, marginTop: 40, alignItems: 'center', }}>
+    <Text style={{  paddingBottom: 20, textAlign: 'center', }}>
+      Type in text, then click on the button to view state.forms
+    </Text>
     <TextInput
       // value={props.forms.myForm.input1} // NOTE the app breaks if you comment this out
       style={{ paddingLeft: 10, height: 40, borderColor: 'gray', borderWidth: 1, }}
