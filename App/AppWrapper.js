@@ -9,7 +9,6 @@ import {
   connect,
 } from 'react-redux'
 import * as Actions from '../redux/Actions'
-import Store from '../redux/Store'
 
 const update = (params, props) => props.updateForm(params)
 
